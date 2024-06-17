@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: white;
+            color: blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+        }
+        .header .company-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .header .nav li {
+            margin-left: 20px;
+        }
+        .header .nav a {
+            text-decoration: none;
+            color: blue;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .header .nav a:hover {
+            border-bottom: 2px solid blue;
+        }
+        .header .sign-up-button {
+            margin-left: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color:blue;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .main-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .main-content p {
+            font-size: 18px;
+            color: #666;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .card .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="company-name">Company Name</div>
+        <ul class="nav">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+        <a href="#" class="sign-up-button">Sign Up</a>
+    </header>
+    <div class="main-content">
+        <h1>Pricing</h1>
+        <p>Quickly biuld an effective pricing table for your potential customers with this Bootstrap example.It's built with default bootstrap components and utilities with little customization.</p>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <h3>Free</h3>
+            <p>$0/mo 10 users icluded 2GB of storage Email support Help center access</p>
+            <a href="#" class="button">Sign Up for free</a>
+        </div>
+        <div class="card">
+            <h3>Pro</h3>
+            <p>$15/mo 20 users included 10 GB of storage priority email support Help center access.</p>
+            <a href="#" class="button">Get started</a>
+        </div>
+        <div class="card">
+            <h3>Enterprise</h3>
+            <p>$29/mo 30 users included 15 GB of storage phone and email support Help center access</p>
+            <a href="#" class="button">Contact us</a>
+        </div>
+    </div>
+</body>
+</html>
+
+

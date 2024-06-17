@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        .container {
+            position:fixed;
+            z-index:999;
+            top:30%;
+            left:0;
+            height:auto;
+            width:auto;
+        }
+        .java,.css,.html,.bootstrap {
+            height:40px;
+            width:100px;
+            position:absolute;
+            left:-80px;
+            top:0%
+            background-color:aqua;
+            border-radius:5px;
+            text-align:center;
+            line-height:40px;
+            transition:left 0.5s;
+            
+        }
+        .container>:hover{
+            left:0px;
+        }
+        .java {
+            background-color:aqua;
+            top:0px;
+        }
+        .css {
+            background-color:blue;
+            top:45px;
+        }
+        .html {
+            background-color:red;
+            top:90px;
+        }
+        .bootstrap {
+            background-color:grey;
+            top:135px;
+        }
+        a {
+           
+            font-size:22px;
+            font-family:chiller;
+            letter-spacing:1px;
+            text-decoration:none;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="java">
+            <a href="#">Java</a>
+        </div>
+        <div class="css">
+            <a href="#">CSS</a>
+        </div>
+        <div class="html">
+            <a href="#">HTML</a>
+        </div>
+        <div class="bootstrap">
+            <a href="#">Bootstrap</a>
+        </div>
+    </div>
+</body>
+</html>
+

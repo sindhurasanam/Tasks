@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url(images/buildz.png);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Ensure full viewport height */
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+        height: 130vh;
+      }
+
+      header {
+        background-color: yellow;
+        color: black;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 20px;
+      }
+
+      .header-text {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: black;
+        margin-right: 400px;
+      }
+
+      .header-text div {
+        margin-right: 20px;
+      }
+
+      .details {
+        font-size: 12px;
+        color: black;
+        margin-left: 2px;
+      }
+
+      .nav-bar {
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+      }
+
+      .nav-bar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        transition: all 0.3s ease;
+      }
+
+      .nav-bar a:hover {
+        text-decoration: underline;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: gray;
+        min-width: 160px;
+        z-index: 1;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #555;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .get-quote {
+        background-color: transparent;
+        color:black;
+        border: 1px solid black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+        
+      }
+
+      .get-quote:hover {
+        background-color: red;
+        border-color: #4caf50;
+      }
+
+      .main-content {
+        padding: 50px 20px;
+        flex: 1;
+        margin-left: 80px;
+      }
+
+      .footer {
+        background-color: #ddd;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: auto;
+        flex-shrink: 0; /* Prevent footer from shrinking */
+      }
+
+      .footer-box {
+        display: inline-block;
+        width: 29%;
+        text-align: left;
+        padding: 20px;
+        vertical-align: top;
+      }
+
+      .footer-box img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        float: left;
+        margin-right: 20px;
+        margin-top: 30px; /* Reset top margin */
+      }
+
+      .footer-box h4 {
+        margin-top: 0;
+        color: yellow;
+      }
+
+      .footer-box p {
+        color: white;
+        display: flex;
+        align-items: center;
+        margin: 0;
+      }
+
+      .footer-box-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Builderz</div>
+      <div class="header-text">
+        <div>
+          <i class="material-icons">schedule</i>
+          <span class="info-icons">Opening Hours</span>
+          <div class="details">Mon-Fri: 9am - 6pm</div>
+        </div>
+        <div>
+          <i class="material-icons">phone</i>
+          <span class="info-icons">Call Us</span>
+          <div class="details">+1-800-123-4567</div>
+        </div>
+        <div>
+          <i class="material-icons">email</i>
+          <span class="info-icons">Email Us</span>
+          <div class="details">info@builderz.com</div>
+        </div>
+      </div>
+    </header>
+    <div class="nav-bar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Service</a>
+      <a href="#">Team</a>
+      <a href="#">Project</a>
+      <div class="dropdown">
+        <span style="color: white">Pages</span>
+        <div class="dropdown-content">
+          <a href="#">Page 1</a>
+          <a href="#">Page 2</a>
+          <a href="#">Page 3</a>
+        </div>
+      </div>
+      <a href="#" style="margin-right: 500px">Contact</a>
+      <button class="get-quote">Get a Quote</button>
+    </div>
+    <div class="main-content">
+      <h1>We are professional for your dream project</h1>
+      <button class="get-quote">Get a Quote</button>
+    </div>
+    <div class="footer">
+      <div class="footer-box" style="background-color: #545657">
+        <img
+          src="images/engineering_24dp_FILL0_wght400_GRAD0_opsz24 (2).png"
+          alt="Profile 1"
+        />
+        <div class="footer-box-text">
+          <h4>Expert Worker</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+            nemo ex, doloribus nisi repellat voluptatibus neque odit consequatur
+            qui odio aut distinctio vitae aliquam, itaque dolores vero, enim
+            veniam? Labore.
+          </p>
+        </div>
+      </div>
+      <div class="footer-box" style="background-color: #91908f">
+        <img
+          src="images/location_city_24dp_FILL0_wght400_GRAD0_opsz24 (1).png"
+          alt="Profile 2"
+        />
+        <div class="footer-box-text">
+          <h4>Quality Work</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+            nemo ex, doloribus nisi repellat voluptatibus neque odit consequatur
+            qui odio aut distinctio vitae aliquam, itaque dolores vero, enim
+            veniam? Labore.
+          </p>
+        </div>
+      </div>
+      <div class="footer-box" style="background-color: #545657">
+        <img
+          src="images/groups_24dp_FILL0_wght400_GRAD0_opsz24 (1).png"
+          alt="Profile 3"
+        />
+        <div class="footer-box-text">
+          <h4>24/7 Support</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+            nemo ex, doloribus nisi repellat voluptatibus neque odit consequatur
+            qui odio aut distinctio vitae aliquam, itaque dolores vero, enim
+            veniam? Labore.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

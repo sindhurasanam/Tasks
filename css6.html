@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <style>
+       body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+       }
+       .container {
+        width: 300px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-radius: 10px;
+
+       }
+       .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+       }
+       .group {
+        margin-bottom: 15px;
+        text-align: left;
+       }
+       .group label {
+        display: block;
+        margin-bottom: 5px;
+       }
+       .group input[type="text"],
+       .group input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+       }
+       .remember-me {
+        display: flex;
+        align-items: center;
+       }
+       .remember-me input {
+         margin-right: 10px;
+       }
+       .buttons {
+         display: flex;
+         justify-content: space-between;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        
+        .cancel-btn {
+         padding: 10px 20px;
+         background-color: red;
+         color: white;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+        }
+        .buttons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        
+        .forgot-password {
+          margin-left=auto;
+        }
+        .forgot-password a {
+          color: #333;
+          text-decoration: none;
+        }
+        .forgot-password a:hover {
+          text-decoration: underline;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Bb9_iBsr195qgIO669deUeY6goAa3rPU41c_UGLD_zPVFzsdVqSsOQRRHs6k9X_0VHY&usqp=CAU" alt="Avatar" class="avatar">
+        <form>
+            <div class="group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="group remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <div class="group buttons">
+                <button type="submit" class="login-btn"><Label>Login</button>
+            </div>
+            <div class="group buttons">
+                <button type="button" class="cancel-btn">Cancel</button>
+            </div>
+            <div class="group forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
